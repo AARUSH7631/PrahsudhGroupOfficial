@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PRGR properties list and details!</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <h1>PRGR properties list and details!</h1>
+  <button onclick="downloadFile()">Download Excel File</button>
+
+  <script>
+    function downloadFile() {
+      const link = document.createElement('a');
+      link.href = 'PRGR Properties List And Details! .xlsx';
+      link.download = 'PRGR Properties List And Details.xlsx';
+      link.click();
+    }
+  </script>
+</body>
+</html>
